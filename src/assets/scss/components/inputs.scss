@@ -1,0 +1,51 @@
+@import "../res/variables&fonts.scss";
+
+.input {
+    @include DFR;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 14px 20px;
+
+    border-radius: 8px;
+    background: #F5F5F5;
+
+    width: -webkit-fill-available;
+    max-width: 650px;
+
+    width: 100%;
+
+    input {
+        width: 100%;
+    }
+
+    &-IdNum {
+        span {
+            max-width: 6px;
+            overflow: hidden
+        }
+    }
+
+    &-username {
+        @include DFR;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+        padding: 14px 20px;
+
+        border-radius: 8px;
+        background: #F5F5F5;
+
+        max-width: 650px;
+        width: 100%;
+
+        input {
+            width: 100%;
+        }
+    }
+
+    &-checkbox {
+        @include DFR;
+        gap: 8px;
+    }
+}

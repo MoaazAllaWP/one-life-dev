@@ -1,0 +1,47 @@
+@import "../res/mixins&autos.scss";
+
+.btn {
+    &-pri {
+        @include DFR;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+        padding: 14px 20px;
+
+        border-radius: 8px;
+        background: #B7F0E3;
+
+        width: -webkit-fill-available;
+        max-width: 650px;
+
+        width: 100%;
+    }
+
+    &-sec {
+        @include DFR;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+        padding: 14px 20px;
+
+        border-radius: 8px;
+        border: 1px solid #004956;
+
+        width: -webkit-fill-available;
+        max-width: 650px;
+
+        width: 100% !important;
+
+    }
+    &-ico {
+        padding: 6px;
+    }
+    &-sec,&-pri,&-ico {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+        cursor: pointer;
+    }
+
+}

@@ -1,0 +1,91 @@
+@import "./res/mixins&autos.scss", "./res/variables&fonts.scss";
+
+.LoginPage {
+    @include DFR;
+
+    @include sc(945px) {
+        @include DFC;
+        padding: 75px 0;
+
+        .imgWrap {
+            display: none;
+        }
+    }
+
+    align-items: center;
+    justify-content: center;
+    gap: 75px;
+    padding: 125px;
+
+    height: fit-content;
+    min-width: 100%;
+    max-width: calc(100vw - (25px*2));
+
+    .imgWrap {
+        height: unset;
+        width: unset;
+        max-width: 375px;
+
+
+        svg {
+            width: -webkit-fill-available;
+        }
+    }
+
+    .form {
+        @include DFC;
+        @include sc(600px) {
+        padding: 25px;
+        }
+        gap: 45px;
+        padding: 45px;
+        background: #FAFAFA;
+
+        width: 100%;
+        max-width: 680px;
+
+        .textWrap {
+            @include DFC;
+            gap: 45px;
+
+            text-align: center;
+        }
+
+        .inputsWrap {
+            @include DFC;
+            gap: 15px;
+
+            width: -webkit-fill-available;
+        }
+
+        .states {
+            @include DFR;
+            justify-content: space-between;
+            padding: 0px 20px;
+            gap: 12px;
+
+            width: -webkit-fill-available;
+            max-width: 650px;
+    
+            width: 100%;
+        }
+
+        .btnsWrap {
+            @include DFC;
+            gap: 25px;
+
+            width: 100%;
+        }
+
+        .orDevider {
+            width: -webkit-fill-available;
+            max-width: 645px;
+            min-width: 395px;
+        }
+
+        .methodsWrap {
+            @include DFR;
+            gap: 15px
+        }
+    }
+}
